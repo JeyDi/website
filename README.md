@@ -22,3 +22,5 @@ If you see something that it's not right or correct, or if you think I can do so
 
 - [Astro](https://docs.astro.build/) The web framework for content-driven websites
 - [Chota css](https://jenil.github.io/chota/#!) a small micro css framework
+- [Iconogram](https://icongr.am/) for icons
+- [Github pages](https://pages.github.com/) for the hosting of the website
