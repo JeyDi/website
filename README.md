@@ -18,6 +18,8 @@ The purpose of this website is also to learn Javascript, web and frontend techno
 
 If you see something that it's not right or correct, or if you think I can do something better, please let me know opening an issue :)
 
+ps: I know since I'm using Astro that it's not a proper "vanilla" website and there are a lot of js libraries, but there is always a threshold between simplicity and complexity.
+
 ## Created with
 
 - [Astro](https://docs.astro.build/) The web framework for content-driven websites
