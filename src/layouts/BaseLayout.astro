@@ -1,7 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-const {pageClaim} = Astro.props;
+const {pageTitle} = Astro.props;
+const {pageSubtitle} = Astro.props;
 
 //css consts variables
 const skillColor = "green";
@@ -21,9 +22,8 @@ const textCase =  "bold";
     </style>
 	<body>
 		<Header />
-		<h1>Andrea Guzzo</h1>
-		<h2>My personal website</h2>
-        {pageClaim && <p>List of great {pageClaim}</p>}
+		<h1>{pageTitle}</h1>
+		{pageSubtitle && <h2>{pageSubtitle}</h2>}
         <slot />
 		<Footer />
 	<script>

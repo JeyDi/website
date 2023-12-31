@@ -1,7 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageClaim = "Great blog post!";
+const pageTitle = "Andrea Guzzo";
+const pageSubTitle = "My personal digital garden";
 ---
-<BaseLayout pageClaim={pageClaim}>
-	{pageClaim === null || pageClaim.trim() === "" && <h2>My awesome blog subtitle</h2>}
+<BaseLayout 
+	pageTitle={pageTitle}
+	pageSubtitle={pageSubTitle}>
+
 </BaseLayout>
