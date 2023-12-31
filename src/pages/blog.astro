@@ -1,20 +1,10 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BlogLayout from '../layouts/BlogLayout.astro';
+const blogTitle = 'Blog posts';
+const blogSubtitle = 'List of all blog posts and articles published';
+const blogTags = ['blog', 'astro', 'personal', 'life'];
 ---
-<body>
-    <Header />
-
-    <h1>Andrea Guzzo</h1>
-    <h1>Blog</h1>
-    <p>This is where i create my personal blog and contents</p>
-    <ul>
-        <li><a href="/posts/post-1/">Post 1</a></li>
-        <li><a href="/posts/post-2/">Post 2</a></li>
-        <li><a href="/posts/post-3/">Post 3</a></li>
-    </ul>
-    <Footer />
-    <script>
-    import "../scripts/menu.js";
-	</script>
-</body>
+<BlogLayout blogTitle={blogTitle} 
+            blogSubtitle={blogSubtitle}
+            blogTags={blogTags}>
+</BlogLayout>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from './BaseLayout.astro'
+const {blogTitle} = Astro.props;
+const {blogSubtitle} = Astro.props;
+const {blogTags} = Astro.props;
+---
+
+<BaseLayout>
+    <slot />
+    <h1>{blogTitle}</h1>
+    <h2>{blogSubtitle}</h2>
+    <ul>
+        <li><a href="/posts/post-1/">Post 1</a></li>
+        <li><a href="/posts/post-2/">Post 2</a></li>
+        <li><a href="/posts/post-3/">Post 3</a></li>
+    </ul>
+    <p>List of blog tags</p>
+    <ul>
+        {blogTags.map((tags) => <li class="skill">{tags}</li>)}
+    </ul>
+	
+</BaseLayout>
